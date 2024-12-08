@@ -36,15 +36,9 @@ class _HomePageState extends State<HomePage> with WindowListener {
             },
           ),
           IconButton(
-            icon: const Icon(Icons.screen_lock_landscape),
-            onPressed: () async {
-              windowManager.setFullScreen(!await windowManager.isFullScreen());
-            },
-          ),
-          IconButton(
-            icon: const Icon(Icons.screen_share_sharp),
+            icon: const Icon(Icons.add_chart),
             onPressed: () {
-              AppRouter.pushPage(context, "second");
+              AppRouter.pushPage(context, "chart");
             },
           )
         ],

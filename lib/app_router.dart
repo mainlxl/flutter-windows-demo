@@ -1,3 +1,4 @@
+import 'package:doctor/page/charts_page.dart';
 import 'package:doctor/page/dialog_page.dart';
 import 'package:doctor/page/second_page.dart';
 import 'package:doctor/page/splash_screen_page.dart';
@@ -31,7 +32,7 @@ class AppRouter {
       case 'dialog':
         return MaterialPageRoute(builder: (_) => const SmartDialogPage());
       default:
-        return MaterialPageRoute(builder: (_) => SplashScreenPage());
+        return MaterialPageRoute(builder: (_) => MultiLineChart());
     }
   }
 }
